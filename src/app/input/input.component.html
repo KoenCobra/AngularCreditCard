@@ -11,11 +11,11 @@
     Value must be at least {{control.errors?.['minlength'].requiredLength}} characters long
     (you entered {{control.errors?.['minlength'].actualLength}} characters)
   </div>
-  <!--  <div *ngIf="control.errors?.['maxlength']">-->
-  <!--    Value must be max {{control.errors?.['maxlength'].requiredLength}} characters long-->
-  <!--    (you entered {{control.errors?.['maxlength'].actualLength}} characters)-->
-  <!--  </div>-->
-  <!--  <div *ngIf="control.errors?.['pattern']">-->
-  <!--    Invalid format-->
-  <!--  </div>-->
+    <div *ngIf="control.errors?.['maxlength']">
+      Value must be max {{control.errors?.['maxlength'].requiredLength}} characters long
+      (you entered {{control.errors?.['maxlength'].actualLength}} characters)
+    </div>
+    <div *ngIf="control.errors?.['pattern']">
+      Invalid format
+    </div>
 </ng-container>
