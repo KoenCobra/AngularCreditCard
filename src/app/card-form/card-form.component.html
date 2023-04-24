@@ -1,3 +1,7 @@
+<app-card [name]="cardForm.get('name')?.value ?? ''" [cardNumber]="cardForm.get('cardNumber')?.value ?? ''"
+          [expiration]="cardForm.get('expiration')?.value ?? ''"></app-card>
+
+
 <form [formGroup]="cardForm" (ngSubmit)="onSubmit()">
   <app-input label="Name" [control]="cardForm.controls.name"></app-input>
   <app-input label="Card Number" [control]="cardForm.controls.cardNumber"></app-input>
