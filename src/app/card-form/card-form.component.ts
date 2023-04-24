@@ -30,4 +30,8 @@ export class CardFormComponent {
 
   onSubmit() {
   }
+
+  resetForm() {
+    this.cardForm.reset();
+  }
 }
